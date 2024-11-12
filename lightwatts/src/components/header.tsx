@@ -3,10 +3,9 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="w-screen p-3 pl-7">
+    <div className="bg-white w-screen p-3 pl-7 shadow-md sticky top-0 z-50">
       <header>
-        <nav className="flex items-center
-         text-black text-lg font-headerfont">
+        <nav className="flex items-center text-black text-lg font-headerfont">
           <ul id="ulheader" className="flex items-center space-x-8 ">
             <li>
               <Link href="/">
@@ -25,12 +24,12 @@ export default function Header() {
               <Link href="/sobre">A LightWatts</Link>
             </li>
             <li className="nav-item">
-            <Link href="/fale-conosco">Fale conosco</Link>
-              </li>
+              <Link href="/fale-conosco">Fale conosco</Link>
+            </li>
           </ul>
           <ul className="ml-auto pr-20">
             <li className="loginlink">
-                <Link className="text-xl" href="/auth/login">Login ▷</Link>
+              <Link className="text-xl" href="/auth/login">Login ▷</Link>
             </li>
           </ul>
         </nav>
