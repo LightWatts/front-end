@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="bg-white w-screen p-3 pl-7 shadow-md sticky top-0 z-50">
+    <div className="bg-white w-screen p-3 pl-7 shadow-md fixed top-0 z-50">
       <header>
         <nav className="flex items-center text-black text-lg font-headerfont">
           <ul id="ulheader" className="flex items-center space-x-8 ">
