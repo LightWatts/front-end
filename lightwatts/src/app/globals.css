@@ -42,3 +42,15 @@ body {
 .loginlink:hover::after {
   @apply w-full
 }
+
+.sectionlink {
+  @apply relative;
+}
+
+.sectionlink::after {
+  @apply content-[''] w-0 bg-white h-[2px] left-0 bottom-[2px] rounded-xl absolute duration-300;
+}
+
+.sectionlink:hover::after {
+  @apply w-full
+}
