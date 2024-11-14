@@ -1,14 +1,31 @@
-import LoginTemplate from '@/components/login'
-import React from 'react'
+import LoginTemplate from '@/components/login';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 export default function Login() {
   return (
-    <div className='bg-black h-screen overflow-y-hidden overflow-x-hidden w-screen flex'>
-      <div className='bg-white h-full w-2/5'>
-        <LoginTemplate />
+    <div 
+      style={{ 
+        backgroundImage: `url('/img/background.jpg')`, 
+        backgroundSize: 'cover',
+        backgroundPosition: 'center', 
+        backgroundRepeat: 'no-repeat'
+      }}
+      className="h-screen w-screen overflow-hidden flex items-center justify-center relative"
+    >
+      <div className="absolute top-4 left-6">
+        <Link href="/">
+          <Image
+            className="hover:scale-110 duration-500"
+            src="/img/logo.png"
+            alt="Logo"
+            width={60}
+            height={60}
+          />
+        </Link>
       </div>
-      <div className='bg-black h-full w-3/5 flex justify-center items-center'>
-      </div>
+      <LoginTemplate />
     </div>
-  )
+  );
 }
