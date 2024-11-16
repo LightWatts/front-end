@@ -14,7 +14,8 @@ export default {
       },
       fontFamily: {
         headerfont: ['Jost', 'sans serif', 'system-ui'],
-        lulo: ['Lulo Clean One', 'sans-serif'],
+        lulo: ['Lulo Clean One', 'sans-serif', 'system-ui'],
+        gabarito: ['Gabarito', 'sans-serif', 'system-ui']
       }
     },
   },
