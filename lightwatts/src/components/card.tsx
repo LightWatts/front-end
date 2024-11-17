@@ -21,7 +21,7 @@ const cards = [
 const CardSlider = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-indigo-50 py-20">
-      <h2 className="text-4xl font-extrabold text-center font-lulo text-gray-900 mb-12">
+      <h2 className="text-3xl font-extrabold text-center font-lulo text-gray-900 mb-12 md:text-4xl">
         Ferramentas
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl px-4">
